@@ -5,9 +5,6 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "newline"
-        },
-        {
           "style": "plain",
           "template": "\u256d\u2500<#ffdd86>{{ .UserName }}@{{ .HostName }}</>\u2500",
           "type": "session"
