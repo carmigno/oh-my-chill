@@ -12,6 +12,9 @@
         {
           "foreground": "#42a9ff",
           "style": "plain",
+          "properties": {
+            "style": "full"
+          },
           "template": "<#42a9ff>[{{ .Path }}]</>",
           "type": "path"
         },
