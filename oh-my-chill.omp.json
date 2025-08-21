@@ -2,166 +2,167 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "style": "plain",
           "template": "\u256d\u2500<#ffdd86>{{ .UserName }}@{{ .HostName }}</>\u2500",
-          "type": "session"
+          "type": "session",
+          "style": "plain"
         },
         {
-          "foreground": "#42a9ff",
-          "style": "plain",
           "properties": {
             "style": "full"
           },
           "template": "<#42a9ff>[{{ .Path }}]</>",
-          "type": "path"
+          "foreground": "#42a9ff",
+          "type": "path",
+          "style": "plain"
         },
         {
-          "foreground": "#FF9248",
-          "style": "plain",
           "template": "<#FF9248>\u2500(</>#<#ffffff>)</>",
-          "type": "root"
+          "foreground": "#FF9248",
+          "type": "root",
+          "style": "plain"
         }
-      ],
-      "type": "prompt"
+      ]
     },
     {
+      "type": "prompt",
       "alignment": "right",
       "segments": [
         {
-          "foreground": "#3C873A",
           "properties": {
             "fetch_package_manager": true,
             "npm_icon": " <#cc3a3a>\ue5fa</> ",
             "yarn_icon": " <#348cba>\ue6a7</>"
           },
-          "style": "plain",
           "template": "<#ffffff>(</>{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}<#ffffff>)</>",
-          "type": "node"
+          "foreground": "#3C873A",
+          "type": "node",
+          "style": "plain"
         },
         {
-          "foreground": "#ffdd86",
-          "style": "plain",
           "template": "{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
-          "type": "python"
+          "foreground": "#ffdd86",
+          "type": "python",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#ec2729",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "java"
+          "type": "java",
+          "style": "plain"
         },
         {
-          "foreground": "#0d6da8",
-          "style": "plain",
           "template": "<#ffffff>(</>{{ if .Unsupported }}\uf071{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "dotnet"
+          "foreground": "#0d6da8",
+          "type": "dotnet",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#06aad5",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "go"
+          "type": "go",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#925837",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "rust"
+          "type": "rust",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#055b9c",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "dart"
+          "type": "dart",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#ce092f",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "angular"
+          "type": "angular",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#de1f84",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "aurelia"
+          "type": "aurelia",
+          "style": "plain"
         },
         {
-          "foreground": "#ffffff",
-          "style": "plain",
           "template": "<#1e293b>(</>{{ if .Error }}{{ .Error }}{{ else }}Nx {{ .Full }}{{ end }}<#1e293b>)</>",
-          "type": "nx"
+          "foreground": "#ffffff",
+          "type": "nx",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#359a25",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "julia"
+          "type": "julia",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#9c1006",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "ruby"
+          "type": "ruby",
+          "style": "plain"
         },
         {
+          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
           "foreground": "#5398c2",
-          "style": "plain",
-          "template": "<#ffffff>(</>{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}<#ffffff>)</>",
-          "type": "azfunc"
+          "type": "azfunc",
+          "style": "plain"
         },
         {
-          "foreground": "#faa029",
-          "style": "plain",
           "template": "<#ffffff>(</>{{.Profile}}{{if .Region}}@{{.Region}}{{end}}<#ffffff>)</>",
-          "type": "aws"
+          "foreground": "#faa029",
+          "type": "aws",
+          "style": "plain"
         },
         {
-          "foreground": "#316ce4",
-          "style": "plain",
           "template": "<#ffffff>(</>{{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}<#ffffff>)</>",
-          "type": "kubectl"
+          "foreground": "#316ce4",
+          "type": "kubectl",
+          "style": "plain"
         }
-      ],
-      "type": "prompt"
+      ]
     },
     {
+      "type": "prompt",
       "alignment": "left",
-      "newline": true,
       "segments": [
         {
-          "style": "plain",
           "template": "\u2570\u2500",
-          "type": "text"
+          "type": "text",
+          "style": "plain"
         },
         {
-          "foreground": "#e0f8ff",
           "properties": {
             "branch_icon": "\ue725 ",
             "fetch_status": true,
             "fetch_upstream_icon": true
           },
-          "style": "plain",
           "template": "<#ffffff>[</>{{ .HEAD }}{{ if .Staging.Changed }}<#00AA00> \u25cf {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#D75F00> \u25cf {{ .Working.String }}</>{{ end }}<#ffffff>]-</>",
-          "type": "git"
+          "foreground": "#e0f8ff",
+          "type": "git",
+          "style": "plain"
         },
         {
-          "foreground": "#ecf7fa",
-          "foreground_templates": ["{{ if gt .Code 0 }}#ef5350{{ end }}"],
           "properties": {
             "always_enabled": true
           },
-          "style": "plain",
           "template": "\ue285 ",
-          "type": "status"
+          "foreground": "#ecf7fa",
+          "type": "status",
+          "style": "plain",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#ef5350{{ end }}"
+          ]
         }
       ],
-      "type": "prompt"
+      "newline": true
     }
   ],
-  "version": 1
+  "version": 3
 }
-
